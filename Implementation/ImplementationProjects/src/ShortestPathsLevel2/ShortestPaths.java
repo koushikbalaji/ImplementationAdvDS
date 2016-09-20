@@ -362,7 +362,7 @@ public class ShortestPaths {
 	//driver program for LP3 level 2
 	public static void main(String ar[]) throws FileNotFoundException {
 
-		Graph g = Graph.readGraph(new Scanner(new File("test.txt")), true);
+		Graph g = Graph.readGraph(new Scanner(new File("no2.txt")), true);
 		
 		List<Vertex> topOrder=null;
 

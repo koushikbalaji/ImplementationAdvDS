@@ -264,7 +264,7 @@ public class ShortestPaths {
 	{
 		
 		Graph g = Graph.readGraph(
-				new Scanner(new File("test.txt")),
+				new Scanner(new File("no1.txt")),
 				true);
 //		Graph g = Graph.readGraph(
 //				new Scanner(System.in),

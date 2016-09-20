@@ -34,6 +34,8 @@ public class FindEulerianTrail {
 		
 		return null;
 	}
+	
+	
 	static boolean verifyTour(Graph g, List<Edge> tour, Vertex start)  // verify tour is a valid Euler tour
 	{
 		if(g.numEdges!=tour.size())
