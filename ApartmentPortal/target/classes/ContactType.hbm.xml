@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 29, 2015 2:20:32 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="wpl.apartmentportal.dao.model.ContactType" table="CONTACT_TYPE">
+        <id name="contact_type" type="java.lang.Long">
+            <column name="CONTACT_TYPE" />
+            <generator class="assigned" />
+        </id>
+        <property name="type_desc" type="java.lang.String">
+            <column name="TYPE_DESC" />
+        </property>
+    </class>
+</hibernate-mapping>

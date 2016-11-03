@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 29, 2015 8:16:18 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="wpl.apartmentportal.dao.model.MaintenanceType" table="MAINTENANCE_TYPE">
+        <id name="main_type" type="java.lang.Long">
+            <column name="MAIN_TYPE" />
+            <generator class="assigned" />
+        </id>
+        <property name="charges" type="int">
+            <column name="CHARGES" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+    </class>
+</hibernate-mapping>

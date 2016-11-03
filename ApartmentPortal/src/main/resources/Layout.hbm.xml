@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 28, 2015 11:37:00 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="wpl.apartmentportal.dao.model.Layout" table="LAYOUT">
+        <id name="apt_type" type="java.lang.Long">
+            <column name="APT_TYPE" />
+            <generator class="assigned" />
+        </id>
+        <property name="bhk" type="int">
+            <column name="BHK" />
+        </property>
+        <property name="sqft" type="int">
+            <column name="SQFT" />
+        </property>
+        <property name="rent" type="int">
+            <column name="RENT" />
+        </property>
+    </class>
+</hibernate-mapping>

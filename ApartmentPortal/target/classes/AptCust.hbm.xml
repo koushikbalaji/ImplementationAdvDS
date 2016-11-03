@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 28, 2015 11:33:52 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="wpl.apartmentportal.dao.model.AptCust" table="APT_CUST">
+        <id name="cust_id" type="int">
+            <column name="CUST_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="apt_no" type="int">
+            <column name="APT_NO" />
+        </property>
+    </class>
+</hibernate-mapping>

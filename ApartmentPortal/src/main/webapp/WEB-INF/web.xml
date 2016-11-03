@@ -1,0 +1,96 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>LoginController</servlet-name>
+  	<display-name>LoginController</display-name>
+  	<description></description>
+  	<servlet-class>wpl.apartmentportal.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SignupController</servlet-name>
+  	<display-name>SignupController</display-name>
+  	<description></description>
+  	<servlet-class>wpl.apartmentportal.controller.SignupController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BookAptController</servlet-name>
+  	<display-name>BookAptController</display-name>
+  	<description></description>
+  	<servlet-class>wpl.apartmentportal.controller.BookAptController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FloorPlanController</servlet-name>
+  	<display-name>FloorPlanController</display-name>
+  	<description></description>
+  	<servlet-class>wpl.apartmentportal.controller.FloorPlanController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginPaymentGatewayController</servlet-name>
+  	<display-name>LoginPaymentGatewayController</display-name>
+  	<description></description>
+  	<servlet-class>wpl.apartmentportal.controller.LoginPaymentGatewayController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SignUpPaymentGatewayController</servlet-name>
+  	<display-name>SignUpPaymentGatewayController</display-name>
+  	<description></description>
+  	<servlet-class>wpl.apartmentportal.controller.SignUpPaymentGatewayController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>MaintenanceController</servlet-name>
+  	<display-name>MaintenanceController</display-name>
+  	<description></description>
+  	<servlet-class>wpl.apartmentportal.controller.MaintenanceController</servlet-class>
+  </servlet>
+    <servlet>
+		<servlet-name>jersey-serlvet</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>wpl.apartmentportal.restcontroller</param-value>
+		</init-param>
+		<init-param>
+			<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>jersey-serlvet</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>LoginController</servlet-name>
+  	<url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SignupController</servlet-name>
+  	<url-pattern>/SignupController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BookAptController</servlet-name>
+  	<url-pattern>/BookAptController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FloorPlanController</servlet-name>
+  	<url-pattern>/FloorPlanController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginPaymentGatewayController</servlet-name>
+  	<url-pattern>/LoginPaymentGatewayController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SignUpPaymentGatewayController</servlet-name>
+  	<url-pattern>/SignUpPaymentGatewayController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MaintenanceController</servlet-name>
+  	<url-pattern>/MaintenanceController</url-pattern>
+  </servlet-mapping>
+</web-app>

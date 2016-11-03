@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 28, 2015 11:37:25 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="wpl.apartmentportal.dao.model.LeaseInfo" table="LEASE_INFO">
+        <id name="lease_no" type="int">
+            <column name="LEASE_NO" />
+            <generator class="assigned" />
+        </id>
+        
+        <property name="booking_id" type="int">
+            <column name="BOOKING_ID" />
+        </property>
+        <property name="apt_no" type="int">
+            <column name="APT_NO" />
+        </property>
+        <property name="from_date" type="java.util.Date">
+            <column name="FROM_DATE" />
+        </property>
+        <property name="to_date" type="java.util.Date">
+            <column name="TO_DATE" />
+        </property>
+    </class>
+</hibernate-mapping>

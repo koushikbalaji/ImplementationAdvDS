@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 29, 2015 3:22:22 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="wpl.apartmentportal.dao.model.Rent" table="RENT">
+        <id name="sno" type="int">
+            <column name="SNO" />
+            <generator class="assigned" />
+        </id>
+        <property name="apt_no" type="int">
+            <column name="APT_NO" />
+        </property>
+        <property name="due" type="int">
+            <column name="DUE" />
+        </property>
+        <property name="fine" type="int">
+            <column name="FINE" />
+        </property>
+        <property name="paymentType" type="java.lang.String">
+            <column name="PAYMENT_TYPE" />
+        </property>
+        <property name="duedate" type="java.sql.Date">
+            <column name="DUE_DATE" />
+        </property>
+        <property name="paiddate" type="java.sql.Date">
+            <column name="PAID_DATE" />
+        </property>
+    </class>
+</hibernate-mapping>

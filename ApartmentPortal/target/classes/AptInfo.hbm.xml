@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 28, 2015 11:34:27 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="wpl.apartmentportal.dao.model.AptInfo" table="APT_INFO">
+        <id name="apt_no" type="int">
+            <column name="APT_NO" />
+            <generator class="assigned" />
+        </id>
+        <property name="apt_type" type="int">
+            <column name="APT_TYPE" />
+        </property>
+        <property name="booked_status" type="java.lang.String">
+            <column name="BOOKED_STATUS" />
+        </property>
+    </class>
+</hibernate-mapping>
